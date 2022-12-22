@@ -24,6 +24,5 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      # https://github.com/docker/metadata-action 
-      - name: Docker Metadata action
-        uses: docker/metadata-action@v4.1.1
+      - run: cat $GITHUB_EVENT_PATH
+
