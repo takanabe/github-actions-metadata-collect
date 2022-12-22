@@ -25,4 +25,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       - run: cat $GITHUB_EVENT_PATH
+      - run: echo "GITHUB_REF_PROTECTED: $GITHUB_REF_PROTECTED"
+      - run: echo "GITHUB_REF_NAME: $GITHUB_REF_NAME"
+
 
